@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: rgb(0, 0, 0);
+	font-family: 'Raleway', sans-serif;
+}
+
+header {
+	padding: 50px 15px 0px;
+}
+
+header h1 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 48px;
+	letter-spacing: 7px;
+	font-weight: 900;
+	text-align: center;
+	color: rgb(229,9,20);
+}
+
+header h2 {
+	font-size: 25px;
+	padding: 15px;
+	text-align: center;
+	color: rgb(112, 110, 110);
+}
+
+main {
+	margin: 0 auto;
+	max-width: 960px;
+	width: 100%;
+}
+
+section {
+	padding: 15px;
+}
+
+.searchbox {
+	display: block;
+	width: 100%;
+	padding: 15px;
+	border: rgb(229,9,20);
+	outline: none;
+	background: rgb(0, 0, 0);
+	background-color: rgb(34, 33, 33);
+	border-radius: 3px;
+	color: rgb(229,9,20);
+	font-size: 20px;
+	font-weight: 300;
+	transition: 0.4s ease-out;
+}
+
+
+.searchbox:focus {
+	box-shadow: 0px 0px 8px 3px rgb(229,9,20);
+}
+
+.results {
+	display: flex;
+	margin: 0px -15px;
+	flex-wrap: wrap;
+}
+
+.results .result {
+	display: flex;
+	padding: 15px;
+	width: 33.333%;
+	min-width: 250px;
+	flex-direction: column;
+	cursor: pointer;
+}
+
+.results .result img {
+	display: block;
+	width: 100%;
+}
+
+.results .result h3 {
+	padding: 10px;
+	font-size: 20px;
+	font-weight: 600;
+	transition: 0.4s ease-out;
+	color: rgb(255, 255, 255);
+	background: rgb(34, 33, 33);
+	flex: 1 1 100%;
+}
+
+.results .result:hover h3 {
+	background: rgb(229,9,20);
+	color: rgb(255, 255, 255);
+}
+
+.popup {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100vh;
+	width: 100vw;
+	background-color: rgb(0, 0, 0);
+	overflow-y: scroll;
+}
+
+.popup .content {
+	display: block;
+	margin: 0 auto;
+	padding: 25px;
+	width: 100%;
+	max-width: 960px;
+	color: rgb(229,9,20);
+}
+
+.popup .content h2 {
+	font-size: 28px;
+	font-weight: 600;
+}
+.popup .content h2 span {
+	font-size: 20px;
+	font-weight: 300;
+	color: rgb(229,9,20);
+}
+
+.popup .content .rating {
+	padding: 10px;
+	margin-bottom: 30px;
+	text-align: left;
+}
+
+.popup .content .plot {
+	display: flex;
+	color: rgb(255, 255, 255);
+	flex-wrap: wrap;
+	margin: 0px -15px 30px;
+}
+
+.popup .content .plot img {
+	padding: 0px 15px;
+	max-width: 300px;
+	flex: 1 1 50%;
+}
+
+.popup .content .plot p {
+	padding: 15px;
+	flex: 1 1 50%;
+}
+
+.popup .content .close {
+	display: inline-block;
+	padding: 15px 30px;
+	font-size: 18px;
+	font-weight: 700;
+	border-radius: 8px;
+	border: none;
+	outline: none;
+	appearance: none;
+	cursor: pointer;
+	background: rgb(34, 33, 33);
+	color: rgb(255, 255, 255);
+	transition: 0.4s ease-out;
+}
+
+.popup .content .close:hover {
+	background: rgb(229,9,20);
+	color: rgb(255, 255, 255);
+}
